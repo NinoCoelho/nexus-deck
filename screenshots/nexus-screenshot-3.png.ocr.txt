@@ -1,0 +1,25 @@
+<div data="89 36 127 50" data-label="Page-Header"><p>Nexus</p></div>
+<div data="896 34 957 51" data-label="Page-Header"><p>Ask Gemini</p></div>
+<div data="125 70 241 86" data-label="Page-Header"><p>127.0.0.1:64209/#/calendar</p></div>
+<div data="40 110 960 135" data-label="Page-Header"><p>NEXUS logo, navigation icons, and user profile area.</p></div>
+<div data="40 150 160 180" data-label="Text"><p>+ New chat | Import</p></div>
+<div data="40 185 160 520" data-label="List-Group"><ul><li>Views: Chat, Vault, Kanban, Calendar, finance, invoices, Knowledge, Heartbeat, Dream, Insights</li></ul></div>
+<div data="175 105 225 135" data-label="Text"><p>Nexus Active Now</p></div>
+<div data="175 155 960 180" data-label="Text"><p>Calendar navigation: Default, Today, May 17-23, 2026, Day, Week, Month, Auto-fire</p></div>
+<div data="175 185 960 940" data-label="Table"><p>Calendar grid showing tasks like 'Daily News Pipeline' and 'Job Search Pipeline' across days of the week.</p></div>
+<div data="340 235 655 805" data-label="Modal"><p>LinkedIn Article: Daily News Research
+Done Agent Recurring
+Mon, May 4, 8:00 AM – 8:30 AM
+DAILY LINKEDIN ARTICLE RESEARCH PIPELINE
+You are running the daily news research trigger for the LinkedIn Articles Pipeline.
+STEP 1 — GATHER NEWS:
+• Use the daily-news-summary skill to fetch the last 24h of news from major RSS feeds.
+• Focus on topics relevant to: enterprise integration, AI agents, data architecture, cloud infrastructure, utility/energy tech, Oracle ecosystem, and leadership/career growth for architects.
+STEP 2 — DEEP RESEARCH:
+• From the news summary, pick the TOP 3 most compelling stories for a LinkedIn audience.
+• Use the deep-research skill to produce thorough, source-backed research on each of the 3 stories.
+• Spawn parallel sub-agents so each story gets its own deep research.
+STEP 3 — SAVE RESEARCH:
+• Save each research output to vault/research/linkedin/YYYY-MM-DD-<slug>.md
+• Each file should include: headline, summary, insights, sources
+Actions: Delete, Open in chat, Close, Edit</p></div>

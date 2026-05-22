@@ -1,0 +1,106 @@
+<div data-bbox="89 38 127 52" data-label="Page-Header"><p>Nexus</p></div>
+<div data-bbox="899 36 967 53" data-label="Page-Header"><p>Ask Gemini</p></div>
+<div data-bbox="125 72 235 89" data-label="Page-Header"><p>127.0.0.1:64209/#/kanban</p></div>
+<div data-bbox="77 111 124 137" data-label="Section-Header"><p>Nexus<br/>Active Now</p></div>
+<div data-bbox="74 158 171 173" data-label="Text"><p>boards / news-pipeline.md</p></div>
+<div data-bbox="77 195 134 211" data-label="Section-Header"><p>News Pipeline</p></div>
+<div data-bbox="779 158 967 211" data-label="Text"><p>Graph History Read aloud Edit Settings Filters + Lane</p></div>
+<div data-bbox="134 233 286 505" data-label="Card">
+<p><b>Enrich</b> 1</p>
+<p><b>News Pipeline — 2026-05-19</b><br/>2026-05-19</p>
+<p><b>Fetch complete.</b></p>
+<ul>
+<li><b>Total stories:</b> 65</li>
+<li><b>Sources:</b> 9 (NewsAPI, Tavily, TechCrunch, Ars Technica, BBC Business, BBC Technology, NYT Business, Financial Times, The Guardian)</li>
+<li><b>Summary:</b> notes/news-summary-2026-05-19.md</li>
+</ul>
+<p>+ Card</p>
+</div>
+<div data-bbox="296 233 453 505" data-label="Card">
+<p><b>Correlate</b> 1</p>
+<p><b>News Pipeline — 2026-05-06</b><br/>SCRAPE &amp; SAVE Complete — 2026-05-06</p>
+<ul>
+<li><b>Total stories:</b> 83</li>
+<li><b>Files created:</b> 83 in news/2026-05-06/</li>
+<li><b>Scraped successfully:</b> 78 (scraped: true)</li>
+<li><b>Scrape failed:</b> 5 (scraped: false) — paywalls/JS-rendered sites (mostly NVT Forbes Business Insider)</li>
+</ul>
+<p>+ Card</p>
+</div>
+<div data-bbox="463 233 618 305" data-label="Card">
+<p><b>Scoring</b> 0</p>
+<p>+ Card</p>
+</div>
+<div data-bbox="628 233 783 465" data-label="Card">
+<p><b>Research Triage</b> 5</p>
+<p><b>News Pipeline — 2026-05-11</b><br/>Date: 2026-05-11 Total Stories: 70 unique (73 listed; 3 duplicates across sections) Active Sources: 9 (NewsAPI, Tavily, NYT, FT, BBC Business, BBC Tech, TechCrunch, Ars Technica, The Guardian) Failed/Stale: 3 (CNBC, WSJ Markets, The Verge) Scrape Results: 1 full article scraped / 69 summary-only Correlations: 18 groups identified Impact Scores: 70 stories scored Top 3</p>
+<p>+ Card</p>
+</div>
+<div data-bbox="628 475 783 665" data-label="Card">
+<p><b>News Pipeline — 2026-05-13</b><br/>2026-05-13</p>
+<p><b>FETCH COMPLETE</b></p>
+<ul>
+<li>Total stories: 57</li>
+<li>Sources: 16 (NewsAPI, Tavily, NYT, FT, BBC, TechCrunch, Ars Technica, Guardian, CNBC, Barron's, Bloomberg, WSJ, Yahoo Finance, and more)</li>
+<li>Summary: notes/news-summary-2026-05-13.md</li>
+</ul>
+<p>+ Card</p>
+</div>
+<div data-bbox="628 675 783 865" data-label="Card">
+<p><b>News Pipeline — 2026-05-15</b><br/>2026-05-15</p>
+<p><b>FETCH COMPLETE</b></p>
+<ul>
+<li>Total stories: 61</li>
+<li>Sources: 14 (NewsAPI, Tavily, CNBC, WSJ, NYT, FT, BBC Business, BBC Tech, TechCrunch, Ars Technica, The Guardian, The Verge, Axios, Next Big Future)</li>
+<li>Summary: notes/news-summary-2026-05-15.md</li>
+</ul>
+<p>+ Card</p>
+</div>
+<div data-bbox="628 875 783 935" data-label="Card">
+<p><b>News Pipeline — 2026-05-17</b><br/>Date: 2026-05-17<br/>SCORING complete.</p>
+</div>
+<div data-bbox="793 233 953 465" data-label="Card">
+<p><b>Done</b> 5</p>
+<p><b>News Pipeline — 2026-05-04</b><br/>Research Triage — 2026-05-04<br/>Top 5 stories dispatched to research pipeline:</p>
+<table border="1">
+<thead>
+<tr>
+<th>#</th>
+<th>Story</th>
+<th>Composite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Strait of Hormuz Shutdown<br/>— US to Guide Stranded Ships</td>
+<td>41</td>
+</tr>
+<tr>
+<td>2</td>
+<td>UAE Quits OPEC as Sovereign Wealth Dwarfs Oil</td>
+<td>38</td>
+</tr>
+</tbody>
+</table>
+<p>+ Card</p>
+</div>
+<div data-bbox="793 475 953 665" data-label="Card">
+<p><b>2026-05-05</b><br/>TRIAGE — 2026-05-05</p>
+<p>Summary file:<br/>notes/news-summary-2026-05-05.md</p>
+<p>Story folder: news/2026-05-05/</p>
+<p>Correlations: news/2026-05-05/correlations.md</p>
+<p>(11 groups) Impact Scores: news/2026-05-05/impact-scores.md</p>
+<p>+ Card</p>
+</div>
+<div data-bbox="793 675 953 865" data-label="Card">
+<p><b>News Pipeline — 2026-05-08</b><br/>Research Triage — 2026-05-08<br/>Impact Scoring complete.</p>
+<ul>
+<li><b>Stories scored:</b> 80 files in news/2026-05-08/</li>
+<li><b>Full rankings:</b> news/2026-05-08/impact-scores.md</li>
+</ul>
+<p>+ Card</p>
+</div>
+<div data-bbox="793 875 953 935" data-label="Card">
+<p><b>News Pipeline — 2026-05-12</b><br/>Date: 2026-05-12 Total stories: 85<br/>Sources: 11 (NewsAPI, Tavily, NYT, FT, BBC Business, BBC Tech, TechCrunch, Ars Technica, The Guardian, The Verge, Axios, Next Big Future)</p>
+</div>

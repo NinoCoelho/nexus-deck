@@ -66,13 +66,13 @@
       <div class="blob" style="width:200px;height:200px;top:45%;left:12%;background:#FBBF24;opacity:.07"></div>
     </div>
     <div class="content text-center">
-      <div class="text-[100px] mb-4 animate-[float_3s_ease-in-out_infinite] reveal">&#129504;</div>
-      <h1 class="font-display text-[clamp(3rem,7vw,6rem)] tracking-tight mb-4 reveal bg-linear-to-br from-accent-1 via-accent-2 to-accent-3 bg-clip-text text-transparent leading-tight">Nexus</h1>
-      <p class="text-[clamp(1rem,1.8vw,1.5rem)] uppercase tracking-[5px] text-text-muted reveal">Your AI-powered second brain & operations hub</p>
-      <div class="mt-10 max-w-3xl reveal">
+      <div class="text-[100px] mb-4 animate-[float_3s_ease-in-out_infinite]">&#129504;</div>
+      <h1 class="font-display text-[clamp(3rem,7vw,6rem)] tracking-tight mb-4 bg-linear-to-br from-accent-1 via-accent-2 to-accent-3 bg-clip-text text-transparent leading-tight">Nexus</h1>
+      <p class="text-[clamp(1rem,1.8vw,1.5rem)] uppercase tracking-[5px] text-text-muted">Your AI-powered second brain & operations hub</p>
+      <div class="mt-10 max-w-3xl">
         <p class="text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed">A local-first agent platform that thinks with you — managing your knowledge, running your workflows, and getting smarter every day.</p>
       </div>
-      <div class="mt-8 flex gap-4 justify-center reveal">
+      <div class="mt-8 flex gap-4 justify-center">
         <div class="glass px-5 py-3 text-base text-text-muted"><span class="text-accent-1 font-bold">Founder:</span> Idemir "Nino" Coelho</div>
         <div class="glass px-5 py-3 text-base text-text-muted"><span class="text-accent-2 font-bold">Stage:</span> Pre-seed</div>
       </div>
@@ -792,9 +792,8 @@ document.addEventListener('click',e=>{
 document.getElementById('lightbox').addEventListener('click',e=>{e.preventDefault();e.stopPropagation();closeLightbox()});
 let touchStartX=0;document.addEventListener('touchstart',e=>{touchStartX=e.touches[0].clientX});document.addEventListener('touchend',e=>{const diff=touchStartX-e.changedTouches[0].clientX;if(Math.abs(diff)>50){if(diff>0){if(!revealNextStep())changeSlide(1)}else changeSlide(-1)}});
 function animateSlide(slide){slide.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transition='none';el.style.opacity='0';el.style.transform='translateY(18px)';el.offsetHeight;const delay=i*.07;el.style.transition=`opacity .3s ease ${delay}s, transform .3s ease ${delay}s`;el.style.opacity='1';el.style.transform='translateY(0)'});slide.querySelectorAll('.step').forEach(el=>{el.classList.remove('visible')});stepIndex[current]=0}
-function initDeck(){const s=document.querySelector('.slide.active');if(s)animateSlide(s)}
-if(document.readyState==='complete'){setTimeout(initDeck,150)}
-else{window.addEventListener('load',()=>setTimeout(initDeck,150))}
+// Animate slides 2+ when navigated. Slide 1 is always visible (no .reveal).
+try{animateSlide(document.querySelector('.slide.active'))}catch(e){}
 function openLightbox(src){const lb=document.getElementById('lightbox'),img=document.getElementById('lightbox-img');img.src=src;lb.classList.add('open')}
 function closeLightbox(){document.getElementById('lightbox').classList.remove('open')}
 </script>

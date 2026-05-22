@@ -789,7 +789,8 @@ document.addEventListener('click',e=>{
 document.getElementById('lightbox').addEventListener('click',e=>{e.preventDefault();e.stopPropagation();closeLightbox()});
 let touchStartX=0;document.addEventListener('touchstart',e=>{touchStartX=e.touches[0].clientX});document.addEventListener('touchend',e=>{const diff=touchStartX-e.changedTouches[0].clientX;if(Math.abs(diff)>50){if(diff>0){if(!revealNextStep())changeSlide(1)}else changeSlide(-1)}});
 function animateSlide(slide){slide.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transition='none';el.style.opacity='0';el.style.transform='translateY(18px)';el.offsetHeight;const delay=i*.07;el.style.transition=`opacity .3s ease ${delay}s, transform .3s ease ${delay}s`;el.style.opacity='1';el.style.transform='translateY(0)'});slide.querySelectorAll('.step').forEach(el=>{el.classList.remove('visible')});stepIndex[current]=0}
-try{animateSlide(document.querySelector('.slide.active'))}catch(e){}
+function initFirstSlide(){const s=document.querySelector('.slide.active');if(s)animateSlide(s)}
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',()=>setTimeout(initFirstSlide,100))}else{setTimeout(initFirstSlide,100)}
 function openLightbox(src){const lb=document.getElementById('lightbox'),img=document.getElementById('lightbox-img');img.src=src;lb.classList.add('open')}
 function closeLightbox(){document.getElementById('lightbox').classList.remove('open')}
 </script>
